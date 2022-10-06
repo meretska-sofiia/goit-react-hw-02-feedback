@@ -1,16 +1,16 @@
+import { Button } from './FeedbackOptions.styled';
 const FeedbackOptions = ({ onLeaveFeedback, options }) => {
   return (
     <>
       {options.map(buttonName => (
-        <button
-          style={{ textTransform: 'capitalize' }}
+        <Button
           key={buttonName}
           type="button"
           name={buttonName}
           onClick={onLeaveFeedback}
         >
           {buttonName}
-        </button>
+        </Button>
       ))}
     </>
   );
